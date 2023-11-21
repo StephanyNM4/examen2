@@ -17,8 +17,8 @@ public class TipoVehiculoController {
     // @Autowired
     // private TipoVehiculoServiceImpl tipoVehiculoServiceImpl;
 
-    @PostMapping("/guardar")
-    public TipoVehiculo crearTipoVehiculo(@RequestBody TipoVehiculo tipoVehiculo) {
-        return this.tipoVehiculoServiceImpl.crearTipoVehiculo(tipoVehiculo);
-    }
+    // @PostMapping("/guardar")
+    // public TipoVehiculo crearTipoVehiculo(@RequestBody TipoVehiculo tipoVehiculo) {
+    //     return this.tipoVehiculoServiceImpl.crearTipoVehiculo(tipoVehiculo);
+    // }
 }

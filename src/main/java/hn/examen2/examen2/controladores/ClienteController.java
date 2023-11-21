@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import hn.examen2.examen2.modelos.Cliente;
+import hn.examen2.examen2.repositorios.VehiculoRepository;
 import hn.examen2.examen2.servicios.ClienteService;
 import hn.examen2.examen2.servicios.impl.ClienteServiceImpl;
 
@@ -20,6 +21,7 @@ public class ClienteController {
     
     @Autowired
     private ClienteServiceImpl clienteServiceImpl;
+
 
     @GetMapping("/prueba")
     public String prueba(){
