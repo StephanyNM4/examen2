@@ -1,10 +1,12 @@
 package hn.examen2.examen2.modelos;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,5 +31,6 @@ public class TipoVehiculo {
     @Column(name = "precioxhora")
     private Double precioXhora;
 
-    
+    @OneToMany(cascade = CascadeType.ALL)
+    private Vehiculo vehiculo;
 }
