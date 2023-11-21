@@ -28,4 +28,6 @@ public class TipoVehiculo {
 
     @Column(name = "precioxhora")
     private Double precioXhora;
+
+    
 }
