@@ -25,6 +25,7 @@ public class VehiculoServiceImpl implements VehiculoService{
         if (vehiculo.getTipoVehiculo() != null) {
             int idTipoVehiculo = vehiculo.getTipoVehiculo().getIdTipoVehiculo();
             TipoVehiculo tipoVehiculo = this.tipoVehiculoRepository.findById(idTipoVehiculo).get();
+            vehiculo.setTipoVehiculo(tipoVehiculo);
         }
 
 
